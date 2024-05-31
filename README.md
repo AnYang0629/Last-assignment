@@ -22,6 +22,7 @@ I went throws other peoples work from a website called CodePen.
 ## Technical Description
 My design idea is about adding buttons and timers and countdown effects based on group code.
 ### Buttons and countdown
+  ```
   startButton = createButton('start');
   startButton.position(10, 10);
   startButton.mousePressed(startSketch);
@@ -46,6 +47,7 @@ My design idea is about adding buttons and timers and countdown effects based on
   isRunning = false;
 
   ### Timer
+  ```
   function drawTimer() {
   fill(0);
   textSize(16);
