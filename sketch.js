@@ -9,7 +9,7 @@ let startButton, pauseButton, endButton;
 function setup() {
   createCanvas(600, 800); //Ensure that the draw function is run only once
   // noLoop();
-  // 创建按钮
+  // Create Button
   startButton = createButton('start');
   startButton.position(10, 10);
   startButton.mousePressed(startSketch);
@@ -85,14 +85,14 @@ function draw() {
       line(x, y, x2, y2);
     }
 
-    // 花盆
+    // Pot
     drawFlowerpot();
 
-    // 垂直和水平圆圈
+    // half circles
     drawVerticalCircle();
     drawHorizontalCircle();
 
-    //树枝
+    //Branches
     drawBranches();
 
     //By looking at the top of the picture
@@ -129,8 +129,8 @@ function drawTimer() {
 function setTimerDuration() {
   let inputTime = parseFloat(inputBox.value());
   if (!isNaN(inputTime) && inputTime > 0) {
-    timerDuration = inputTime * 1000; // 将秒转换为毫秒
-    resetTimer(); // 重置计时器
+    timerDuration = inputTime * 1000; // sec to millie sec
+    resetTimer(); // reset the timer
   } else {
     alert('Please enter a valid time（s）');
   }
@@ -142,7 +142,7 @@ function resetTimer() {
   startTime = millis();
 }
 
-// 花盆
+// Pot
 function drawFlowerpot() {
   fill(92, 173, 123);
   stroke(0);
@@ -162,7 +162,7 @@ function drawFlowerpot() {
   fill(255, 50, 50);
   rect(205, 595, 45, 80);
 
-  // 花盆中的半圆
+  // Half circle in the Pot
   stroke(244, 195, 110);
   strokeWeight(3);
   arc(185, 675, 42, 42, PI, 0, CHORD);
@@ -177,7 +177,7 @@ function drawFlowerpot() {
   arc(326, 675, 50, 50, 1 * PI, 2 * PI, CHORD);
 }
 
-// 树枝
+// Branches
 function drawBranches() {
   stroke(244, 195, 110);
   strokeWeight(5);
@@ -198,7 +198,7 @@ function drawBranches() {
 
 //Here are the circles with the colours split vertically
 function drawVerticalCircle() {
-  let offset = sin(frameCount * 0.05) * 10; // 动画效果
+  let offset = sin(frameCount * 0.05) * 10; // Animation
 
   push(); // Start a new drawing state
   translate(width / 2, height / 2); // Move the origin to the center of the canvas
@@ -309,7 +309,7 @@ function drawVerticalCircle() {
 
 //Here are the circles with the colours split horizontally
 function drawHorizontalCircle() {
-  let offset = sin(frameCount * 0.05) * 10; // 动画效果
+  let offset = sin(frameCount * 0.05) * 10; // Animation
 
   push(); // Start a new drawing state
   translate(width / 2, height / 2); // Move the origin to the center of the canvas
