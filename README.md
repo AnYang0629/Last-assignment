@@ -14,5 +14,33 @@ I focused on user interaction to drive the animation. This allows users to contr
 
 ## References and Inspiration
 I went throws other peoples work from a website called CodePen.
-Countdown Timer by Matt Smith
+### Countdown Timer by Matt Smith
 ![image](https://github.com/AnYang0629/Last-assignment/assets/168147119/b5d303b9-8dd0-4c36-90c1-77b0fc617538)
+### Rain effect by Aaron Rickle
+3. ![image](https://github.com/AnYang0629/Last-assignment/assets/168147119/e0d47e85-b703-4498-84a6-20776e7af220)
+
+## Technical Description
+My design idea is about adding buttons and timers and countdown effects based on group code.
+### Buttons and countdown
+  startButton = createButton('start');
+  startButton.position(10, 10);
+  startButton.mousePressed(startSketch);
+  
+  pauseButton = createButton('pause');
+  pauseButton.position(60, 10);
+  pauseButton.mousePressed(pauseSketch);
+  
+  endButton = createButton('end');
+  endButton.position(120, 10);
+  endButton.mousePressed(endSketch);
+
+  inputBox = createInput();
+  inputBox.position(170, 10);
+  inputBox.size(100);
+
+  setButton = createButton('set');
+  setButton.position(280, 10);
+  setButton.mousePressed(setTimerDuration);
+
+  startTime = millis();
+  isRunning = false;
