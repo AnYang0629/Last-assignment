@@ -1,11 +1,18 @@
-# Last-assignment(Functioning prototype) ayan0078
+![image](https://github.com/AnYang0629/Last-assignment/assets/168147119/63dc7db7-3658-471c-8933-a7f519b3ec2c)# Last-assignment(Functioning prototype) ayan0078
 
 ## Interactive Instructions
-1. The website will start with an option to set the time.
-2. Set the timer with the number of seconds you would like to set, than press start to begin the countdown and the movements of the website.
-3. Pause are free to use if you wish to stop the countdown while it is in process
-4. End button is use to stop the entire countdown.
+1. Start the Animation: Click the start button to begin the animation.
+2. Pause the Animation: Click the pause button to halt the animation temporarily.
+3. End the Animation: Click the end button to stop the animation and reset it.
+4. Set Timer Duration: Enter the desired duration in seconds into the input box and click the set button to adjust the animation timer.
 
-## Details
-1. Time-Based:Employ timers and events for animation is my individual task.
-2. The circles moves with the root of lines and the background curves moves.
+## Details Individual Approach to Animating the Group Code Chosen Method: Interaction
+I focused on user interaction to drive the animation. This allows users to control the start, pause, and end of the animation, as well as set a custom timer duration.
+## Animated Properties
+1. Color Dynamics: The circles split vertically and horizontally alternate colors between red and green dynamically.
+2. Offset Animation: An offset effect creates smooth oscillation for the circles, enhancing the visual fluidity.
+
+## References and Inspiration
+I went throws other peoples work from a website called CodePen.
+Countdown Timer by Matt Smith
+![image](https://github.com/AnYang0629/Last-assignment/assets/168147119/b5d303b9-8dd0-4c36-90c1-77b0fc617538)
