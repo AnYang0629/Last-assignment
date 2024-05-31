@@ -1,4 +1,4 @@
-![image](https://github.com/AnYang0629/Last-assignment/assets/168147119/63dc7db7-3658-471c-8933-a7f519b3ec2c)# Last-assignment(Functioning prototype) ayan0078
+# Final-assignment(Functioning prototype) ayan0078
 
 ## Interactive Instructions
 1. Start the Animation: Click the start button to begin the animation.
@@ -44,3 +44,30 @@ My design idea is about adding buttons and timers and countdown effects based on
 
   startTime = millis();
   isRunning = false;
+
+  ### Timer
+  function drawTimer() {
+  fill(0);
+  textSize(16);
+  textAlign(CENTER, CENTER);
+  let remainingTime = max(0, (timerDuration - timerValue) / 1000).toFixed(2);
+  text("Timer: " + remainingTime + " s", 380, 25);
+}
+
+// settimer
+function setTimerDuration() {
+  let inputTime = parseFloat(inputBox.value());
+  if (!isNaN(inputTime) && inputTime > 0) {
+    timerDuration = inputTime * 1000; // sec to millie sec
+    resetTimer(); // reset the timer
+  } else {
+    alert('Please enter a valid time（s）');
+  }
+}
+
+function resetTimer() {
+  isRunning = false;
+  timerValue = 0;
+  startTime = millis();
+}
+
